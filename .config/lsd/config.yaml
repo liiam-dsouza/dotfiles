@@ -1,0 +1,11 @@
+date: "+%Y-%m-%d"
+blocks:
+  - permission
+  - name
+color:
+  when: auto
+  theme: custom
+sorting:
+  column: name
+  reverse: false
+  dir-grouping: none

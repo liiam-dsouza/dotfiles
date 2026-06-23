@@ -1,0 +1,46 @@
+[user]
+    name = Liam D'Souza
+    email = 50895367+liiam-dsouza@users.noreply.github.com
+[core]
+    excludesfile = ~/.gitignore_global
+    pager = delta
+    autocrlf = input        # normalise line endings on commit
+    editor = nvim
+
+[init]
+    defaultBranch = main
+
+[push]
+    autoSetupRemote = true  # auto set upstream on first push, no more --set-upstream
+
+[pull]
+    rebase = true           # pull --rebase by default, keeps history cleaner
+
+[rebase]
+    autoStash = true        # stash dirty working tree before rebase, restore after
+
+[merge]
+    conflictstyle = diff3   # show base in merge conflicts, easier to resolve
+
+[diff]
+    colorMoved = default    # highlight moved lines differently from added/removed
+
+[delta]
+    navigate = true         # n/N to jump between diff sections
+    side-by-side = true     # split diff view
+    theme = Catppuccin-mocha
+    line-numbers = true
+
+[alias]
+    s  = status -sb                          # short status with branch info
+    l  = log --oneline --graph --decorate    # compact visual log
+    la = log --oneline --graph --all         # same but all branches
+    undo = reset HEAD~1 --mixed              # undo last commit, keep changes staged
+    unstage = restore --staged               # unstage a file
+    aliases = config --get-regexp alias      # list all aliases
+
+[credential]
+    helper = osxkeychain    # use macOS keychain for HTTPS credentials
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/  # always use SSH even if a remote uses HTTPS

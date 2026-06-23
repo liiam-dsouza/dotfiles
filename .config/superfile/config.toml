@@ -1,0 +1,5 @@
+theme = "catppuccin-mocha"
+code_previewer = "bat"
+nerdfont = true
+transparent_background = true
+enable_file_preview_border = true
