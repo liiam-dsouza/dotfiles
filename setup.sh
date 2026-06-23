@@ -40,7 +40,7 @@ if ! command -v brew &>/dev/null; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 	# Add Homebrew to PATH for the current session
-	if [[ -f "/opt/homebrew/bin/brew"]]; then
+	if [[ -f "/opt/homebrew/bin/brew"]] then
 		eval "$(/opt/homebrew/bin/brew shellenv)"
 	fi
 
