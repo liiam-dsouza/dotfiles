@@ -61,7 +61,6 @@ success "Git configured."
 info "Installing Homebrew formulae..."
 xargs brew install <<EOF
 bat
-borders
 btop
 docker
 fastfetch
