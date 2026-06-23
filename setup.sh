@@ -102,7 +102,6 @@ success "Homebrew formulae installed."
 # ── Homebrew Casks ───────────────────────────────────────
 info "Installing Homebrew casks..."
 xargs brew install --cask <<EOF
-aerospace
 aldente
 basictex
 claude
